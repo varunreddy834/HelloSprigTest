@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config></context:annotation-config>
+    <aop:aspectj-autoproxy/>
+
+    <bean id="Home" class="com.spring.example.HomeController" >
+        <!--<property name="message" value="HelloWorld"/>-->
+    </bean>
+
+    <bean id="contactUsController" class="com.spring.example.ContactUsController">
+    </bean>
+
+    <bean id="contactUs" class="com.spring.example.ContactUs" >
+        <property name="phoneNumber" value="285238952"/>
+    </bean>
+
+    <bean id="OurPage" class="com.spring.example.OurPageController" >
+        <!--<property name="OurPage" value="OurPage"/>-->
+    </bean>
+
+
+    <bean id="About" class="com.spring.example.AboutController" >
+        <property name="About" value="About"/>
+    </bean>
+
+    <bean id="Menu" class="com.spring.example.MenuController">
+    </bean>
+
+    <bean id="Orders" class="com.spring.example.OrdersController" >
+    </bean>
+
+    <!--<bean id="BookATable" class="com.spring.example.BookATable" >-->
+    <!--</bean>-->
+
+    <bean id="BookATable" class="com.spring.example.BookATable">
+        <property name="numberofPeople" value="6"/>
+        <property name="date" value="112/12/2016"/>
+        <property name="time" value="10:18 pm"/>
+    </bean>
+    <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <property name="driverClassName" value="org.postgresql.Driver"/>
+    <property name="url" value="jdbc:postgresql://localhost:5432/postgres"/>
+    <property name="username" value="postgres"/>
+    <property name="password" value="admin"/>
+    </bean>
+
+</beans>
