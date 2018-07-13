@@ -32,8 +32,14 @@
     <bean id="Orders" class="com.spring.example.OrdersController" >
     </bean>
 
+    <bean id="Success" class="com.spring.example.SuccessController">
+    </bean>
+
     <!--<bean id="BookATable" class="com.spring.example.BookATable" >-->
     <!--</bean>-->
+
+    <bean id="Cart" class="com.spring.example.CartController">
+    </bean>
 
     <bean id="BookATable" class="com.spring.example.BookATable">
         <property name="numberofPeople" value="6"/>

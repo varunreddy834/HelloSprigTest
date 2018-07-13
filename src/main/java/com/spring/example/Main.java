@@ -13,5 +13,21 @@ public class Main {
         bookATableDAOImpl.listAllBookATable();
         System.out.println(bookATableDAOImpl);
         ((ClassPathXmlApplicationContext)applicationContext).registerShutdownHook();
+
+
+
+        OrdersDAOImpl ordersDAOImpl=(OrdersDAOImpl)applicationContext.getBean("Orders");
+        ordersDAOImpl.addOrders();
+        ordersDAOImpl.listAllOrders();
+        System.out.println(ordersDAOImpl);
+        ((ClassPathXmlApplicationContext)applicationContext).registerShutdownHook();
+
+
+
+        CartDAOImpl cartDAOImpl=(CartDAOImpl)applicationContext.getBean("Cart");
+        cartDAOImpl.addCart();
+        cartDAOImpl.listAllCart();
+        System.out.println(cartDAOImpl);
+        ((ClassPathXmlApplicationContext)applicationContext).registerShutdownHook();
     }
 }

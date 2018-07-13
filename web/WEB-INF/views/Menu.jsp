@@ -95,14 +95,28 @@
                 src="http://www.ndtv.com/cooks/images/mutton-biryani-new.jpg" alt="imgs"
                 style="width: 180px; height: 128px;"
                 class="img-thumbnail img-check">
+
+            <ul>
+                <li>id</li>
+                <li>item</li>
+                <li>description</li>
+                <li>price</li>
+            </ul>
             <input type="checkbox" name="mutton_biriyani" id="item4"
                    value="mutton biriyani" autocomplete="off">
             <figcaption> Mutton Biryani </figcaption>
+            <button><a href="/Cart">Submit</a></button>
+
         </figure>
         </label>
     </div>
 
 </div>
+    <div class="cen">
+
+        <button><a href="/Cart">Submit</a></button>
+
+    </div>
 </div>
 
 

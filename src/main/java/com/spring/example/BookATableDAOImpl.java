@@ -9,13 +9,13 @@ public class BookATableDAOImpl {
 
     DataSource dataSource;
     JdbcTemplate jdbcTemplate;
-    private Object JdbcTemplate;
+  // private Object JdbcTemplate;
 
 
     public void setDataSource(DataSource dataSource)
     {
         this.dataSource=dataSource;
-        JdbcTemplate=new JdbcTemplate(dataSource);
+        jdbcTemplate=new JdbcTemplate(dataSource);
 
     }
 
@@ -25,8 +25,8 @@ public class BookATableDAOImpl {
 
     }
     public void addBookATable(){
-        String sql="insert into BookATable(id,numberofPeople,date,time)values (?,?,?,?)";
-        jdbcTemplate.update("101,12/12/2016,10:18 pm");
+        String sql="insert into BookATable(id,numberofPeople,date,time) values (?,?,?,?)";
+        jdbcTemplate.update(sql,"101","6","11/11/2016","10:18pm");
     }
 
 }

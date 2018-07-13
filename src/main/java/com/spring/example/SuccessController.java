@@ -5,17 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class OrdersController {
+public class SuccessController {
 
-
-    @RequestMapping(value = "/Orders", method = RequestMethod.GET)
-    public String Orders() {
-        System.out.println("inside Orders Controller");
-        return "Orders";
+    @RequestMapping(value = "/Success", method = RequestMethod.GET)
+    public String Success() {
+        System.out.println("inside Success Controller");
+        return "Success";
 
     }
-
-
 }
-
-

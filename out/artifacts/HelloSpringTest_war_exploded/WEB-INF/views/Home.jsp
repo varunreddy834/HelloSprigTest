@@ -12,7 +12,7 @@
     <title>Home</title>
 
     <style>
-        body .Home> ul
+        body.Home> ul
         {
             text-align:center;
 

@@ -11,11 +11,12 @@
     <title>BookATable</title>
 </head>
 <body>
-<input type="text" value="No of People">
+<input type="text" value="id">
+<input type="text" value="numberofPeople">
 <input type="date" value="date">
 <input type="time" value="time">
 
-<button><a href="/home">Submit</a></button>
+<button><a href="/Success">Submit</a></button>
 
 
 
